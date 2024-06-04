@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/OtherImg/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+    <title>CYO | Customize Your Own</title>
+</head>
+<body>
+
+    <header class="header">
+
+        <a href="#" class="logo">CYO</a>
+
+            <ul class="navbar">
+                <li><a href="#shoes" class="best-seller">Best Seller</a></li>
+                <li><a href="#shoes">Shoes</a></li>
+                <li><a href="#shoes" class="sales">Sales</a></li>
+            </ul>
+
+            <div class="main-nav">
+                    <div class="icon-cart">
+                        <a href="#" class="cart-btn"><i class="bi bi-bag"></i></a>
+                        <span>0</span>
+                    </div>
+                <div class="container-signIn-register">
+                    <a href="Views/Sign In/signIn.html" class="sign-in">Sign In</a>
+                    <a href="Views/Register/register.html" class="register">Register</a>
+                </div>
+                <div class="bi bi-list" id="menu-icon"></div>
+            </div>
+
+    </header>
+
+    <main>
+        <section class="first-view-section">
+            <div class="new-choose-bar"><a href="#shoes">New Shoes</a></div>
+
+            <div class="container-collage-shoes">
+                <div class="container-logo-img"><img src="img/OtherImg/logo.png" alt="Logo CYO" class="logo-img"></div>
+                <h1 class="slogan-phrase"><span class="word-1">CUSTOMIZE</span> <span class="word-2">YOUR</span> <span class="word-3">OWN</span></h1>
+                <div class="container-air-force"><img src="img/Shoes/Air Force.png" alt="Air Force One" class="shoe-img"></div>
+                <div class="container-new-balance"><img src="img/Shoes/NB.png" alt="New Balance 990" class="shoe-img"></div>
+                <div class="container-forum"><img src="img/Shoes/Forum.png" alt="Adidas Forum" class="shoe-img"></div>
+                <div class="container-jordan"><img src="img/Shoes/Jordan 4.png" alt="Jordan Retro 9" class="shoe-img"></div>
+                <div class="container-vomero"><img src="img/Shoes/Vomero.png" alt="Nike Vomero" class="shoe-img"></div>
+            </div>
+
+            <div class="new-choose-bar"><a href="#shoes">Choose...</a></div>
+        </section>
+
+        <section class="general-shoes-section">
+
+            <div class="phrase-sort-filters">
+                <div class="phrase-page-shoes">
+                    <h2 class="title-page-shoes" id="shoes"><span class="word-1">CUSTOMIZE</span> <span class="word-2">YOUR</span> <span class="word-3">OWN</span> Unique Shoe Style</h2>
+                    <p class="description-page-shoes">Here are the Different Types of Shoes You Can Customize</p>
+                </div>
+
+                <div class="sort-filter-list">
+
+                    <div class="container-list sort">
+                        <a href="" class="sort-filter-button sort">Sort</a>
+                        <div class="list list-sort">
+                            <a href="" class="anchoor-list low-high" category="low-high">Low to high</a>
+                            <a href="" class="anchoor-list high-low" category="high-low">High to low</a>
+                        </div>
+                    </div>
+
+                    <div class="container-list container-list-filter">
+                        <a href="" class="sort-filter-button filter">Filter</a>
+                        <div class="list list-filter">
+                            <a href="" class="anchoor-list brand">Brand</a>
+                            <div class="filter-list-type list-brand show-unDisplay">
+                                <a href="" class="anchoor-list-type adidas" category="all">All</a>
+                                <a href="" class="anchoor-list-type adidas" category="Adidas">Adidas</a>
+                                <a href="" class="anchoor-list-type jordan" category="Jordan">Jordan</a>
+                                <a href="" class="anchoor-list-type nike" category="Nike">Nike</a>
+                                <a href="" class="anchoor-list-type newBalance" category="New Balance">New Balance</a>
+                                <a href="" class="anchoor-list-type puma" category="Puma">Puma</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- List all shoes -->
+            <div class="container-all-shoes"></div>
+        </section>
+    </main>
+
+    <!-- Pag Cart -->
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart"></div>
+
+        <div class="btnsCartTab">
+            <button class="close">Close</button>
+            <button class="checkOut">Check Out</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-logo-img-footer"><img src="img/OtherImg/logo.png" alt="Logo CYO" class="logo-img-footer"></div>
+        <p class="descripcion-footer"><span class="word-1">CUSTOMIZE</span> <span class="word-2">YOUR</span> <span class="word-3">OWN</span></p>
+        <p class="copyright-footer"><i id="icono-footer" class="bi bi-c-circle"></i>Copyright 2024. Made by <a href="#" class="enlace-footer">Jerónimo Rodriguez S</a></p>
+    </footer>
+
+    <script src="js/menuButtons.js"></script>
+    <script src="js/cartTab.js"></script>
+</body>
+</html>
