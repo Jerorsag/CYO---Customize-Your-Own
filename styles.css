@@ -62,7 +62,7 @@ header {
 
     a {
         color: var(--text-color);
-        font-size: clamp(1rem, 2vw, 1.2rem);
+        font-size: clamp(.75rem, 2vw, 1rem);
         font-weight: 500;
         padding: 5px 0;
         margin: 0 20px;
@@ -144,6 +144,7 @@ header a:hover{
     display: grid;
     grid-template-rows: 70px 1fr 70px;
     transition: all .5s ease;
+    z-index: 10003;
 }
 body.showCart .cartTab {
     inset: 4em 0 0 auto;
